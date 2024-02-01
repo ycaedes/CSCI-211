@@ -1,0 +1,3 @@
+/home/daejeon/workspace/school/CSCI-211/triangleArea/cmake-build-debug/CMakeFiles/triangleArea.dir
+/home/daejeon/workspace/school/CSCI-211/triangleArea/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/daejeon/workspace/school/CSCI-211/triangleArea/cmake-build-debug/CMakeFiles/rebuild_cache.dir
