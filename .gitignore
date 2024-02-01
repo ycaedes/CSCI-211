@@ -1,0 +1,10 @@
+# Ignore all .idea folders
+.idea/
+
+# Ignore CMake build folders
+cmake-build-debug/
+cmake-build-release/  # If you have a release build directory
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
