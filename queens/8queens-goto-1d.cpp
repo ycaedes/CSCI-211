@@ -10,25 +10,17 @@ int main() {
     q[c] = -1;
 
     NR: q[c]++;
-    if (q[c] == 8) goto BACKTRACK;
+    if (q[c] == 8) goto backtrack;
 
-    // row test
+    // row test and diagonal test
     for (int i = 0; i < c; i++) 
-        if (q[c] == q[i]) goto NR;
-
-    // upper diagonal test
-    for (int i = 0; i < c; i++) 
-        if (c - i == q[c] - q[i]) goto NR;
-
-    // lower diagonal test
-    for (int i = 0; i < c; i++)
-        if (c - i == q[i] - q[c]) goto NR; 
+        if (q[c] == q[i] || c - i == abs(q[c] - q[i])) goto NR;
 
     // queen successfully placed in column
     // move to next column
     goto NC;
 
-    BACKTRACK:
+    backtrack:
     c--;
     if (c == -1) return 0; // all solutions have been found
     goto NR;
@@ -42,7 +34,7 @@ int main() {
         cout << "\n";
     }
     cout << "\n";
-    goto BACKTRACK; // backtrack to find the next solution
+    goto backtrack; // backtrack to find the next solution
 
     return 0;
 }
